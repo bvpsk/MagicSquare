@@ -1,0 +1,227 @@
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Pacifico';
+        }
+        html{
+            /* background-image: url("pokemon.jpg"); */
+            background: url("pokemon.jpg") no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100%;
+        }
+        #main{
+            position: absolute;
+            /* background-color: red; */
+            width: 80vh;
+            height: 80vh;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-40%) translateY(-50%);
+            border: 1px transparent;
+            opacity: 0.8;
+        }
+        @media only screen and (max-width: 768px) {
+            #main{
+                width: 100vw;
+                height: 100vw;
+            }
+        }
+        @media only screen and (-webkit-max-width: 768px) {
+            #main{
+                width: 100vw;
+                height: 100vw;
+            }
+        }
+        .com-1{
+            position:relative;
+            width: 80%;
+            
+        }
+        #one{
+            background-color: rgb(0, 132, 240);
+            border-top-right-radius: 30px;
+            border-top-left-radius: 30px;
+            height: 30%;
+        }
+        #one .cubeleton{
+            height: 0px;
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateX(-10%) translateY(-50%);
+            border-top-left-radius: 30px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            background-color: white;
+            border: 1px solid black;
+        }
+        .inp{
+            width:95%;
+            display:inline-block;
+            border:0px transparent;
+            border-radius: 100px;
+            text-align: center;
+            height: 45%;
+        }
+        .input2{
+            background: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            border-top-left-radius: 30px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            background-color: white;
+            padding: 0.5rem 1rem;
+            border: 1px solid black;
+            /* width: auto; */
+        }
+        .run{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.3rem 1rem;
+            background-color: rgb(46, 238, 20);
+            border: 1px transparent;
+            border-radius: 100px;
+            position: absolute;
+            left: 95%;
+            top: 50%;
+            transform: translateX(-100%) translateY(-50%);
+
+        }
+        #two{
+            background-color: red;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            height: 70%;
+        }
+        #cube{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 80%;
+            overflow: hidden;
+        }
+        #cube:after{
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+        .cubelet{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            height: 0px;
+            width: 0px;
+            background-color: white;
+            border: 1px solid black;
+        }
+        .vertical{
+            opacity: 0.2;
+            background-color: red;
+            position: absolute;
+            top: 10%;
+            border: 1px transparent;
+            border-radius: 1000px;
+            transform: translateY(-7%);
+        }
+        .horizontal{
+            opacity: 0.2;
+            background-color: red;
+            position: absolute;
+            left:10%;
+            border: 1px transparent;
+            border-radius: 1000px;
+            transform: translateX(-7%);
+        }
+        .diag1{
+            opacity: 0.2;
+            background-color: red;
+            position: absolute;
+            border: 1px transparent;
+            border-radius: 1000px;
+            left: -15%;
+            top: 45%;
+            transform: rotateZ(45deg) translateY(-25%);
+        }
+        .diag2{
+            opacity: 0.2;
+            background-color: red;
+            position: absolute;
+            border: 1px transparent;
+            border-radius: 1000px;
+            /* display: none; */
+            left: -7%;
+            top: 45%;
+            transform: rotateZ(-45deg) translateY(-25%);
+        }
+        #info{
+            position: absolute;
+            width: 70%;
+            padding:3rem 3rem;
+            font-size: 1.3rem;
+            word-wrap: break-word;
+            background-color: rgb(81, 235, 235);
+            z-index: 200;
+            opacity: 0.95;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 30%;
+            left: 10%;
+            transform: translateX(-10%) translateY(-30%);
+            border: 1px transparent;
+            border-radius: 3rem;
+            display: none;
+        }
+        #cl{
+            position: absolute;
+            left: 95%;
+            top: 5%;
+            transform: translateX(-95%) translateY(-5%);
+            width: 30px;
+            height: 30px;
+            border: 1px transparent;
+            border-radius: 100rem;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .cll{
+            width:63%;
+            height: 63%;
+            border: 1px transparent;
+            border-radius: 100rem;
+            background-color: rgb(81, 235, 235);
+            /* top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%); */
+        }
+        #inf{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            opacity: 0.67;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 1rem;
+        }

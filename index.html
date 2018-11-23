@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MagicSquare</title>
+    <script type = "text/javascript" src = "jquery-3.3.1.min.js"></script>
+    <link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel = "stylesheet" href = "index.css" />
+    
+</head>
+<body>
+    <div id = "inf">
+        <img style = "width:100%;" src = "info.png">
+    </div>
+    <div id = "info">
+        <div id = "cl"><div class = "cll"></div></div>
+            The number in the left box is the Magic Number and a square is 
+            formed with n*n square where n is the number in the 2nd box.
+            <br>
+            This program is implemented using Genetic Algorithm and is endeavoured to 
+            find a number sequence such that each row,column and diagonal sums up to our
+             desired Number.
+             <br>
+             Green strip represents a line summing up to desired number and 
+             Red strip denotes that it is not yet done.
+             <br>
+             Change the values on the boxes and press Run.
+    </div>
+    <div id="main">
+        <div id="one" class = "com-1">
+            <div class = "run btn">Run</div>
+            <div class = "cubeleton target">
+                <input class = "inp" id = "inp1" type = "text" />
+            </div>
+            <div class = "input2">
+                <input class = "inp" id = "inp2" type = "text" />
+            </div>
+        </div>
+        <div id="two" class = "com-1">
+            <div id="cube"></div>
+        </div>
+    </div>
+</body>
+<script type = "text/javascript" src = "script.js"></script>
+<script type = "text/javascript" src = "GA.js"></script>
+</html>
